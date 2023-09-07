@@ -10,7 +10,7 @@ export default  function Navbar() {
     return (
         <nav className="flex items-center justif-between flex-wrap bg-black p-6 grid-cols-12">
             <div className='flex flex-shrink-0 grid-cols-1'>
-                <Image src="/images/CPRlogo.png" width={200} height={200} alt="Cyberpunk Red"/>
+                <Image src="/images/CPRlogo.png" width={150} height={150} alt="Cyberpunk Red" onClick={() => router.push('/')}/>
             </div>
             <div className="flex flex-row text-white space-x-5 justify-end">
                 <button onClick={ () => router.push('/roles')} className="cybr-btn">

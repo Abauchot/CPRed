@@ -9,7 +9,7 @@ export default function Roles() {
             <div className="flex justify-center items-center">
                 <div className="text-center">
                     <h1 className='text-4xl font-normal leading-normal mt-2 mb-2 text-black-800'>Le coeur du jeu de rôle Cyberpunk</h1>
-                    <p>
+                    <p className="px-8">
                         Malgré une guerre généralisée entre des mégacorporation suivi par une explosion atomique,
                         l&apos;univers de Cyberpunk combine la sauvagerie, la sophistication, la modernité et un aspect rétrograde.
                         Des Techies flamboyants aux allures de top models côtoient des guerriers de la route prêts au combat, et tout ce beau monde
