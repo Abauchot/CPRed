@@ -1,9 +1,11 @@
 import './globals.css'
-import {Rajdhani } from 'next/font/google'
+import './glitch_text.css'
+import './glitch_btn.css'
+import { Ubuntu } from 'next/font/google'
 
-const rajdhani = Rajdhani({
+const ubuntu = Ubuntu ({
   subsets: ['latin'],
-  weight: ['500'],
+  weight: ['400']
  })
 
 export const metadata = {
@@ -14,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className={rajdhani.className}>{children}</body>
+      <body className={ubuntu.className}>{children}</body>
     </html>
   )
 }
