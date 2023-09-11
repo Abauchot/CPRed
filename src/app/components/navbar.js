@@ -19,25 +19,25 @@ export default function Navbar() {
                 </button>
             </div>
             <div className="flex flex-row text-white space-x-5  mx-6">
-                <button onClick={() => router.push('/')} className="cybr-btn">
+                <button onClick={() => router.push('/characteristic')} className="cybr-btn">
                     Caractéristiques<span aria-hidden>_</span>
                     <span aria-hidden className="cybr-btn__glitch">Caractéristiques</span>
                 </button>
             </div>
             <div className="flex flex-row text-white space-x-5  mx-6">
-                <button onClick={() => router.push('/')} className="cybr-btn">
+                <button onClick={() => router.push('/skills')} className="cybr-btn">
                     Compétences<span aria-hidden>_</span>
                     <span aria-hidden className="cybr-btn__glitch">Compétences</span>
                 </button>
             </div>
             <div className="flex flex-row text-white space-x-5  mx-6">
-                <button onClick={() => router.push('/')} className="cybr-btn">
+                <button onClick={() => router.push('/gears')} className="cybr-btn">
                     Équipement<span aria-hidden>_</span>
                     <span aria-hidden className="cybr-btn__glitch">Équipement</span>
                 </button>
             </div>
             <div className="flex flex-row text-white space-x-5 justify-end mx-6">
-                <button onClick={() => router.push('/')} className="cybr-btn">
+                <button onClick={() => router.push('/rules')} className="cybr-btn">
                     Règles<span aria-hidden>_</span>
                     <span aria-hidden className="cybr-btn__glitch">Règles</span>
                 </button>
