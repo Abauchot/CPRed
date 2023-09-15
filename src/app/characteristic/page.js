@@ -1,9 +1,9 @@
 import React from "react";
+import Navbar from "@/app/components/navbar";
 
 export default function Characteristic() {
-    return (
-        <div>
-            <h1>Caractéristiques</h1>
-        </div>
+    return(
+        <Navbar />
     )
+
 }
