@@ -8,7 +8,7 @@ export default function Navbar() {
 
 
     return (
-        <nav className="flex items-center justif-between flex-wrap p-6 grid-cols-12 box">
+        <nav className="flex items-center justif-between flex-wrap p-6 grid-cols-12">
             <div className='flex flex-shrink-0 grid-cols-1'>
                 <Image src="/images/CPRlogo.png" width={200} height={200} alt="Cyberpunk Red" onClick={() => router.push('/')} />
             </div>

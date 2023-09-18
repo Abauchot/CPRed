@@ -1,12 +1,15 @@
-import React from "react";
+"use client"
+import React, {useState} from "react";
 import Image from "next/image";
+import Modal from "../components/modal";
+
 
 
 export default function RolesDisplay() {
     const roles = [
         {
             name: 'Rockeurs',
-            shortDescription: "Rellebes rock'n'roll qui défient l'autorité à l'aide de conerts, d'oeuvre d'art et discours enflammés",
+            shortDescription: "Rellebes rock'n'roll qui défient l'autorité à l'aide de conerts, d'oeuvre d'art et discours enflammés.",
             imageUrl:
                 '/images/tokens_roles/rockeur_token.png',
                 width: 100, 
@@ -14,7 +17,7 @@ export default function RolesDisplay() {
         },
         {
             name: 'Solos',
-            shortDescription: "Assassins, gardes du corps, tueurs à gages et soldats à louer dans un nouveau où la loi n'a plus cours",
+            shortDescription: "Assassins, gardes du corps, tueurs à gages et soldats à louer dans un nouveau où la loi n'a plus cours.",
             imageUrl:
                 '/images/tokens_roles/solo_token.png',
                 width: 100, 
@@ -84,18 +87,24 @@ export default function RolesDisplay() {
                 width: 100, 
                 height: 100
         },
-    ]
+    ];
+    const [showModal, setShowModal] = useState(false);
 
     return (
         <div className="flex justify-center items-center">
-            <div className="container grid gap-12 grid-cols-2 grid-rows-2 mt-2.5">
+            <div className="container grid gap-40 grid-cols-2 grid-rows-2 m-14">
                 {roles.map((role) => (
                     <div key={role.name} className="flex flex-col items-center gap-x-6 mt-2.5 mb-2.5">
                         <Image className="h-16 w-16 rounded-full" src={role.imageUrl} alt={role.name} width={role.width} height={role.height} />
-                        <h3 className="text-xl font-semibold l leading-7 tracking-tight text-gray-900">{role.name}</h3>
-                        <p className="break-normal ">{role.shortDescription}</p>
-                        <div>
-                            <button className='border-2'>afficher</button>
+                        <h3 className="text-2xl font-semibold l leading-7 tracking-tight text-red my-2">{role.name}</h3>
+                        <p className="break-normal mb-1 ">{role.shortDescription}</p>
+                        <div id="modal-root">
+                            <button onClick={() => setShowModal(true)} className='border-2 m-2'>afficher</button>
+                            {showModal && 
+                            <Modal onClose={() => setShowModal(false)}>
+                                allo ? 
+                            </Modal>
+                            }
                         </div>
                     </div>
                 ))}
